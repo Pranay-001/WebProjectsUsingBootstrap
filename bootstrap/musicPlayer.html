@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tune Up</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/fa40053145.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit-no">
+        <link rel="stylesheet" type="text/css" href="musicPlayerStyle.css">
+        <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/music-media-2/512/headphone-512.png">
+        <script src="musicPlayer-js.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-headphones" aria-hidden="true"></i>
+                Tune-Up
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark my-2 my-sm-0 text-light" type="submit">Search</button>
+                </form>
+                <a><img class="user"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQt-F5GQg8qB2fWquF1ltQvAT2Z8Dv5pJLb9w&usqp=CAU"/></a>
+            </div>
+        </nav>
+
+        <!-- Top-cards , Trending , Latest Release , Radio-Station-->
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <!-- Top-cards -->
+                <div class="col-md-7 col-lg-8 col-sm-6">
+                    <div class="d-inline-block mr-4 col-md-4 col-lg-3 col-sm-12 mb-4 top-div pad">
+                        <i class="fa fa-play fa-play1" aria-hidden="true"></i><img class="top-cards p-1" src="https://underpassmag.files.wordpress.com/2018/02/dua-lipa.jpg">
+                    </div>
+                    <div class="d-inline-block mr-4 col-md-4 col-lg-3 col-sm-12 mb-4 top-div pad">
+                        <i class="fa fa-play fa-play1" aria-hidden="true"></i><img class=" top-cards p-1" src="Audio-Images/Blinding-lights.jpg">
+                    </div>
+                    <div class="d-inline-block mr-4 col-md-4 col-lg-3 col-sm-12 mb-4 top-div pad">
+                        <i class="fa fa-play fa-play1" aria-hidden="true"></i><img class="top-cards p-1" src="https://ih1.redbubble.net/image.793844935.8839/st,small,507x507-pad,600x600,f8f8f8.u2.jpg">
+                    </div>
+                    <div class="d-inline-block mr-4 col-md-4 col-lg-3 col-sm-12 mb-4 top-div pad">
+                        <i class="fa fa-play fa-play1" aria-hidden="true"></i><img class="top-cards p-1" src="Audio-Images/Love-yourself.jpg">
+                    </div>
+                    <div class="d-inline-block mr-4 col-md-4 col-lg-3 col-sm-12 mb-4 top-div pad">
+                        <i class="fa fa-play fa-play1" aria-hidden="true"></i><img class="top-cards p-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQeajv22CJWxbOGc61EIln7EBrDxXlimknO8A&usqp=CAU">
+                    </div>
+                    <div class="d-inline-block mr-4 col-md-4 col-lg-3 col-sm-12 mb-4 top-div pad">
+                        <i class="fa fa-play fa-play1" aria-hidden="true"></i><img class="top-cards p-1" src="https://images-na.ssl-images-amazon.com/images/I/81Ii6u2neLL._SL1400_.jpg">
+                    </div>
+                </div>
+
+                <!-- Trending -->
+                <div class="col-md-4 col-lg-3 col-sm-6 m-0 p-0 cover">
+                    <div class="container-fluid"><h2><i class="fa fa-fire" aria-hidden="true"></i> Trending</h2></div>
+                    <div class="scroll mb-3">
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex" onclick="addSong('Blinding-lights')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i><span>01</span><img src="Audio-Images/Blinding-lights.jpg"> <span>Blinding Lights</span>
+                            </div>
+                        </div>
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex"  onclick="addSong('Memories')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i><span>02</span><img src="Audio-Images/Memories.jpg"> <span>Memories</span>
+                            </div>
+                        </div>
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex" onclick="addSong('Love-Yourself')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i><span>03</span><img src="Audio-Images/Love-yourself.jpg"><span>Love Yourself</span>
+                            </div>
+                        </div>
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex" onclick="addSong('Sugar-Brownies')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i><span>04</span><img src="Audio-Images/Sugar-Brownies.jpg"><span>Sugar & Brownies</span>
+                            </div>
+                        </div>
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex" onclick="addSong('Dance-Monkey')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i><span>05</span><img src="Audio-Images/Dance-Monkey.jpg"> <span>Dance Monkey</span>
+                            </div>
+                        </div>
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex"  onclick="addSong('Señorita')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i> <span>06</span><img src="Audio-Images/Señorita.jpg"> <span>Señorita</span>
+                            </div>
+                        </div>
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex" onclick="addSong('Havana')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i><span>07</span><img src="Audio-Images/Havana.jpg"><span>Havana</span>
+                            </div>
+                        </div>
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex" onclick="addSong('Solo')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i><span>09</span><img src="Audio-Images/Solo.jpg"> <span>Solo(feat. Demi Lovato)</span>
+                            </div>
+                        </div>
+                        <div class="trending-class row mt-5 trd">
+                            <div class="col-12 d-flex"  onclick="addSong('Gods-plan')">
+                                <i class="fa fa-play fa-play2" aria-hidden="true"></i><span>10</span><img src="Audio-Images/Gods-plan.jpg"> <span>God's Plan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Latest Release -->
+            <div class="row">
+                <h2 class="col-12 mb-5">Latest Releases</h2><br>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 lr">
+                    <i class="fa fa-play fa-play3" aria-hidden="true"></i><img src="https://sdlhivkecdnems03.cdnsrv.jio.com/c.saavncdn.com/831/Dil-Chahte-Ho-Hindi-2020-20200828084001-500x500.jpg"><br>
+                    <h4>Dil Chahte Ho</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 lr">
+                    <i class="fa fa-play fa-play3" aria-hidden="true"></i><img src="https://sdlhivkecdnems05.cdnsrv.jio.com/c.saavncdn.com/191/Dynamite-English-2020-20200820233419-500x500.jpg"><br>
+                    <h4>Dynamite</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 lr">
+                    <i class="fa fa-play fa-play3" aria-hidden="true"></i><img src="https://sdlhivkecdnems04.cdnsrv.jio.com/c.saavncdn.com/672/Love-Yourself-Tear--Korean-2018-20180518051111-500x500.jpg"><br>
+                    <h4>Fake Love</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 lr">
+                    <i class="fa fa-play fa-play3" aria-hidden="true"></i><img src="https://sdlhivkecdnems04.cdnsrv.jio.com/c.saavncdn.com/713/MAP-OF-THE-SOUL-7-Korean-2020-20200221032602-500x500.jpg"><br>
+                    <h4>Black Swan</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 lr">
+                    <i class="fa fa-play fa-play3" aria-hidden="true"></i><img src="https://sdlhivkcdnems03.cdnsrv.jio.com/c.saavncdn.com/837/Billo-Tu-Agg-Hindi-2020-20200816234001-500x500.jpg"><br>
+                    <h4>Billo Tu Agg</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 lr">
+                    <i class="fa fa-play fa-play3" aria-hidden="true"></i><img src="https://sdlhivkcdnems04.cdnsrv.jio.com/c.saavncdn.com/264/Pachtaoge-Female-Version--Hindi-2020-20200813234001-500x500.jpg"><br>
+                    <h4>Pachtaoge</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 lr">
+                    <i class="fa fa-play fa-play3" aria-hidden="true"></i><img src="https://sdlhivkcdnems01.cdnsrv.jio.com/c.saavncdn.com/836/Malang-Unleash-The-Madness-Hindi-2020-20200619175502-500x500.jpg"><br>
+                    <h4>Malang - Unleash The Madness</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 lr">
+                    <i class="fa fa-play fa-play3" aria-hidden="true"></i><img src="https://snoidcdnems02.cdnsrv.jio.com/c.saavncdn.com/286/I-ll-Be-Waiting-Kabhi-Jo-Baadal-2014-500x500.jpg"><br>
+                    <h4>I'll Be Waiting (Kabhi Jo Baadal)</h4>
+                </div>
+            </div>
+
+            <!-- Radio-Station -->
+            <div class="row mt-5">
+                <h2 class="col-12 mt-5 mb-5">Radio Stations</h2><br>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 rs">
+                    <div class="fa-play4"><i class="fa fa-play" aria-hidden="true"></i></div><img src="https://c.saavncdn.com/editorial/Classics-30s&40s_saavn_radio_150x150.jpg"><br>
+                    <h4>Classics 30s and 40s<br>Hindi Radio</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 rs">
+                    <div class="fa-play4"><i class="fa fa-play" aria-hidden="true"></i></div><img src="https://c.saavncdn.com/editorial/WeekendDrive_150x150.jpg"><br>
+                    <h4>Weekend Drive<br>English Radio</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 rs">
+                    <div class="fa-play4"><i class="fa fa-play" aria-hidden="true"></i></div><img src="https://c.saavncdn.com/editorial/Romantic_150x150.jpg"><br>
+                    <h4>Romantic<br>English Radio</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 rs">
+                    <div class="fa-play4"><i class="fa fa-play" aria-hidden="true"></i></div><img src="https://c.saavncdn.com/editorial/ElectronicMovement_saavn_radio_150x150.jpg"><br>
+                    <h4>Electronic Movemen<br>English Radio</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 rs">
+                    <div class="fa-play4"><i class="fa fa-play" aria-hidden="true"></i></div><img src="https://c.saavncdn.com/editorial/HipHop_150x150.jpg"><br>
+                    <h4>Hip Hop<br>English Radio</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 rs">
+                    <div class="fa-play4"><i class="fa fa-play" aria-hidden="true"></i></div><img src="https://c.saavncdn.com/editorial/Workout_150x150.jpg"><br>
+                    <h4>Workout<br>English Radio</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 rs">
+                    <div class="fa-play4"><i class="fa fa-play" aria-hidden="true"></i></div><img src="https://c.saavncdn.com/editorial/Party_150x150.jpg"><br>
+                    <h4>Party<br>Hindi Radio</h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 xs-12 rs">
+                    <div class="fa-play4"><i class="fa fa-play" aria-hidden="true"></i></div><img src="https://c.saavncdn.com/editorial/90sNostalgia_150x150.jpg"><br>
+                    <h4>90s Nostalgia<br>Hindi Radio</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- bottom-bar -->
+        <!-- <div class="container-fluid fill">
+            <div class="row">
+                <div class="col-12 bb p-0 m-0 theme">
+                    <marquee class="text-light"><img id="btm-bar-img" class="bb-img" src="https://1.bp.blogspot.com/-a2MbLJ4L4oI/XzINs-VS0iI/AAAAAAAAAzA/M6FyQuuSAUMI4VsB9jytjfXbcuIAljA1gCNcBGAsYHQ/w600-h450/kabhi%2Bto%2Bpass%2Bmere%2Baao%2Blyrics.jpg"><span id="s-name">&nbsp;Teri Yaadein&nbsp;🎶</span></marquee>
+                    <audio id="btm-bar" controls class="bb1">
+                        <source src="Music/02 - Teri Yaadein (Shrey Singhal - A Indian Atif)(MyMp3Song.Com).mp3">
+                    </audio>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- bottom-bar -->
+        <div class="container-fluid fill bg-dark player">
+            <div class="row">
+                <div id="seek-bar" class="d-flex">
+                    <div id="seeker"></div>
+                    <div id="seek"></div>
+                </div>
+                <div id="currentTime">00:00/00:00</div>
+            </div>
+
+            <div class="row">    
+                <div class="col-6 col-sm-4 col-md-3 d-flex">
+                    <div class="col-4 prev"><img onclick="prev()" src="icons/back.png"/></div>
+                    <div class="col-4 play"><img onclick="play_pause()" id="play/pause" src="icons/play-button.png"/></div>
+                    <div class="col-4 next"><img onclick="next()" src="icons/next.png"/></div>
+                </div>
+                <div class="col-6  col-sm-8 col-md-7 d-flex">
+                    <div class="ml-3 mr-0 p-0 d-none col-sm-2 col-md-2 col-lg-2 d-sm-inline alglft"><img id="btm-bar-img" src="icons/beatmaker.png"/></div>
+                    <marquee class="m-0 p-0 col-12 col-sm-10 col-md-10 col-lg-10"><h1 id="btm-bar">Welcome</h1></marquee>
+                </div>
+                <div id="vol" class="d-none col-md-2 plus-minus d-md-flex">
+                    <div class="col-3 vol-inc-img"><img onclick="decVol()" src="icons/minus.png"/></div>
+                    <div class="col-6 vol-img"><img onclick="mute_unmute()" id="vol-unmute-mute" src="icons/volume.png"/></div>                        
+                    <div class="col-3 vol-dec-img"><img onclick="incVol()" src="icons/plus.png"/></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Script links -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>

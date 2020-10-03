@@ -1,0 +1,103 @@
+@media screen and (min-width:1000px){
+    .bg-grey{
+        height: fit-content;
+        font-size: 2rem;
+    }
+}
+.size-1-5{
+    font-size: 1.5rem;
+}
+
+:root{
+    --theme-color: rgb(4, 78, 78);
+}
+body{
+    background-color:var(--theme-color);
+}
+.bg-grey{
+    background-color: grey;
+}
+.navbar-brand{
+    font-size: 3rem;
+    color: rgb(4, 78, 78) !important;
+}
+.dropdown-menu a:hover{
+    background-color: lightgrey !important;
+}
+.btn-nav{
+    background-color: white;
+}
+.carousel-item img{
+    margin:auto;
+    height: 60vh;
+    width: 100vw;
+}
+.carousel{
+    border:5px solid black;
+}
+@media screen and (max-width:1000px){
+    .carousel-item img{
+        margin:auto;
+        height: 30vh;
+    }
+    .size-1-5{
+        font-size: 1rem;
+    }
+}
+.mg{
+    margin:auto !important;
+}
+.card{
+    max-width: 200px;
+    background: #000 !important;
+    padding: 0px !important;
+    margin: auto !important;
+    margin-bottom: 2rem !important;
+    margin-left: 1rem !important;
+}
+.scroll{
+    min-height: 10rem;
+    max-height: 10rem;
+    overflow-y: scroll;
+}
+.full{
+    background-color: lightgrey;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.card img:hover{
+    opacity: 0.5;
+}
+.dd:hover .dd1 {
+    display: block !important;
+}
+.active{
+    color:skyblue;
+}
+.navbar{
+    top:0%;
+    position: sticky;
+    z-index: 16;
+}
+.cont{
+    height: fit-content;
+}
+@media (max-width:1000px){
+    .opa{
+        height: fit-content !important;
+        margin-top: 0 !important;
+        padding-top:0 !important;
+    }
+}
+.inp{
+    border:none;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+.cont-left{
+    margin: 2rem;
+    margin-left: 4rem;
+}

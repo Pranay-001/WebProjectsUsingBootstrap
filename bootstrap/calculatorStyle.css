@@ -1,0 +1,32 @@
+body{
+    color: tomato;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/7559620/thumb/1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+h1{
+    text-shadow: 2px solid black;
+    text-transform: uppercase;
+}
+td{
+    background-color: rgb(233, 115, 18);
+    color:white;
+    width:5rem;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+table{
+    margin:auto;
+}
+th{
+    background: grey;
+    color: black;
+    text-align: right;
+    font-size: 2rem;
+    height: 3rem;
+}
+.calc,.calc-des{
+    text-align: center;
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Book Bank</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit-no">
+        <link rel="stylesheet" type="text/css" href="bookBankStyle.css">
+        <script src="https://kit.fontawesome.com/fa40053145.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8t_F4WmdqKfUCoMkXwbN8qCZQavHojzK89g&usqp=CAU">
+    </head>
+    <body>
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-grey fixed">
+            <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i>BookBank</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown dd">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genre</a>
+                    <div class="dropdown-menu size-1-5 bg-grey dd1" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Thriller</a>
+                        <a class="dropdown-item" href="#"> Sci-Fi & Fantasy</a>
+                        <a class="dropdown-item" href="#">Mysteries & Thrillers</a>
+                        <a class="dropdown-item" href="#">Classics</a>
+                        <a class="dropdown-item" href="#">Teen & Young Adult</a>
+                        <a class="dropdown-item" href="#">Fiction</a>
+                        <a class="dropdown-item" href="#">Religion & Spirituality</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Profile</a>
+                </li>
+                
+              </ul>
+                <div>
+                    <a role="button" data-toggle="modal" data-target="#exampleModalCenter"><img class="m-3" style="height: 40px; width: 40px; border-radius: 50%;" src="https://wallpapercave.com/wp/wp2026143.jpg"> </a>
+                </div>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-nav btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+
+        <!-- Login -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+                <h5  class="modal-title col-5 active" id="exampleModalLongTitle">Login</h5>
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group ">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- slide-show -->
+        <div id="carouselExampleIndicators" class="carousel slide m-3" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <div class="row full">
+                <img class="d-block col-7 w-90 p-0 opa" src="https://m.media-amazon.com/images/I/51egSOK9kbL._SL500_.jpg" alt="First slide">
+                <div class="card-body col-5 bg-dark text-light">
+                    <h5 class="card-title">The Jungle Book: The Mowgli Stories</h5><br>
+                    <p class="card-text"> Written by: Rudyard Kipling
+                        Narrated by: Bill Bailey, Richard E. Grant, Colin Salmon, Tim McInnerny, Bernard Cribbins, Celia Imrie, Martin Shaw
+                        Length: 2 hrs and 30 mins
+                        Release Date: 05-07-18
+                        Language: English </p>
+                    <br><a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <div class="row full">
+                <img class="d-block col-7 w-90 p-0 opa" src="https://m.media-amazon.com/images/I/51Sdo-tcpnL._SL500_.jpg" alt="Second slide">
+                    <div class="card-body col-5 bg-dark text-light">
+                        <h5 class="card-title">Sherlock Holmes: The Definitive Collection</h5><br>
+                        <p class="card-text"> Written by: Arthur Conan Doyle, Stephen Fry - introductions
+                        Narrated by: Stephen Fry
+                        Length: 71 hrs and 57 mins
+                        Release Date: 27-02-17
+                        Language: English </p>
+                        <br><a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+            <div class="row full">
+                <img class="d-block col-7 w-90 p-0 opa" src="https://m.media-amazon.com/images/I/51gCAAwZMGL._SL500_.jpg" alt="Third slide">
+                    <div class="card-body col-5 bg-dark text-light">
+                        <h5 class="card-title">Throne of Glass</h5><br>
+                        <p class="card-text"> A Throne of Glass Novel
+                        Written by: Sarah J. Maas
+                        Narrated by: Elizabeth Evans
+                        Series: Throne of Glass
+                        Length: 12 hrs and 47 mins
+                        Release Date: 05-11-13
+                        Language: English </p>
+                        <br><a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+
+        <!-- main content -->
+        <div class="container">
+            <div class="row">
+                <div class="card col-sm-5 col-md-3 bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSGJ0mY43p2uqn4p3CLbN1z0HTligUGskm0w71jeLy6S6dHbv0I2BE11bypuOk0&usqp=CAc" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">Manipulation and Dark Psychology</h5>
+                    <p class="card-text">How to Manipulate People Through Persuasion, Hypnosis, NLP and Mind Control</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-5 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRLUNXJuJnQx7M8e68n1ud1rTzX75fvZWzLliY0YtoLYDU6eTiEmtYpRqFNvA&usqp=CAc" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">The Mahabharata Secret</h5>
+                    <p class="card-text"> Written by: Christopher C. Doyle
+                        Narrated by: Swetanshu Bora
+                        Length: 10 hrs and 17 mins
+                        Categories: Science Fiction & Fantasy, Fantasy </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-6 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51bElTYzpxL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll" >
+                    <h5 class="card-title">Bhangarh</h5>
+                    <p class="card-text">Kaali Awaazein, Episode 1
+                        Written by: Mishkka Singh Shekhawat
+                        Narrated by: Amitabh Bachchan, Akash Makhija, Saaquib Ayubi, Shrasti Maheshwari, Arifa Sheikh, Ajit Shidhaye, Shaneel Sinha, Bradley Duns, Sudarshan Pareek, Asif Syed, Mishkka Shekhawat, Shimona Mathur, Wasim Sheikh
+                        Series: Kaali Awaazein
+                        Length: 51 mins
+                        Release Date: 17-01-20
+                        Language: Hindi </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+
+                <div class="card col-sm-5 col-md-3 bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51AQB+HSwvL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">Hidden Dangers in Harry Potter</h5>
+                    <p class="card-text"> Teaching Series
+                        Written by: Steve Wohlberg
+                        Narrated by: Steve Wohlberg
+                        Length: 1 hr and 51 mins
+                        Release Date: 19-06-13
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-5 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51ohTl7gYFL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">Harry Potter and the Philosopher's Stone, Book 1</h5>
+                    <p class="card-text">  Written by: J.K. Rowling
+                        Narrated by: Stephen Fry
+                        Series: Harry Potter, Wizarding World
+                        Length: 9 hrs and 33 mins
+                        Release Date: 20-11-15
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-6 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/517WcD5gWeL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll" >
+                    <h5 class="card-title">Harry Potter and the Chamber of Secrets, Book 2</h5>
+                    <p class="card-text"> Written by: J.K. Rowling
+                        Narrated by: Stephen Fry
+                        Series: Wizarding World, Harry Potter
+                        Length: 11 hrs and 5 mins
+                        Release Date: 20-11-15
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+
+                <div class="card col-sm-5 col-md-3 bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51aJuc5bSnL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">Harry Potter and the Prisoner of Azkaban, Book 3</h5>
+                    <p class="card-text"> Written by: J.K. Rowling
+                        Narrated by: Stephen Fry
+                        Series: Harry Potter, Wizarding World
+                        Length: 13 hrs and 10 mins
+                        Release Date: 20-11-15
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-5 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51godb7L-hL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">Harry Potter and the Goblet of Fire, Book 4</h5>
+                    <p class="card-text"> Written by: J.K. Rowling
+                        Narrated by: Stephen Fry
+                        Series: Wizarding World, Harry Potter
+                        Length: 22 hrs and 17 mins
+                        Release Date: 20-11-15
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-6 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51KGc0Yxl1L._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll" >
+                    <h5 class="card-title">Harry Potter and the Order of the Phoenix, Book 5</h5>
+                    <p class="card-text"> Written by: J.K. Rowling
+                        Narrated by: Stephen Fry
+                        Series: Wizarding World, Harry Potter
+                        Length: 30 hrs and 18 mins
+                        Release Date: 20-11-15
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+
+                <div class="card col-sm-5 col-md-3 bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51YuFod+3FL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">Harry Potter and the Half-Blood Prince, Book 6</h5>
+                    <p class="card-text"> Written by: J.K. Rowling
+                        Narrated by: Stephen Fry
+                        Series: Wizarding World, Harry Potter
+                        Length: 21 hrs and 27 mins
+                        Release Date: 20-11-15
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-5 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51RbwRA52CL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">Harry Potter and the Deathly Hallows, Book 7</h5>
+                    <p class="card-text"> Written by: J.K. Rowling
+                        Narrated by: Stephen Fry
+                        Series: Wizarding World, Harry Potter
+                        Length: 24 hrs
+                        Release Date: 20-11-15
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-6 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/514cjs7jBUL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll" >
+                    <h5 class="card-title">The Avengers: Everybody Wants to Rule the World</h5>
+                    <p class="card-text"> Written by: Dan Abnett, Marvel
+                        Narrated by: Richard Rohan
+                        Length: 6 hrs and 9 mins
+                        Release Date: 01-10-19
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+
+                <div class="card col-sm-5 col-md-3 bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51DC4Zvm90L._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">New Avengers: Breakout</h5>
+                    <p class="card-text"> Written by: Alisa Kwitney, Marvel
+                        Narrated by: Richard Rohan
+                        Length: 4 hrs and 31 mins
+                        Release Date: 10-09-19
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-5 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51xsdzLsp8L._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll">
+                    <h5 class="card-title">Is There a Recipe for Love?'</h5>
+                    <p class="card-text"> Matrimonial Anonymous, Episode 1
+                        Written by: Kiran Watwani
+                        Narrated by: Mouni Roy, Shruti Seth
+                        Series: Matrimonial Anonymous
+                        Length: 22 mins
+                        Release Date: 11-12-19
+                        Language: Hindi </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card col-sm-6 col-md-3  bg-secondary text-white" style="width: 18rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/51k48m7QAsL._SL500_.jpg" alt="Card image cap">
+                    <div class="card-body scroll" >
+                    <h5 class="card-title">Fifty Shades of Grey
+                        Written by: E. L. James
+                        Narrated by: Becca Battoe
+                        Length: 19 hrs and 48 mins
+                        Release Date: 12-04-12
+                        Language: English </p>
+                    </div>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>  
+
+                
+            </div>
+        </div>
+
+        <!-- #next previous -->
+        <div class="container">
+            <div class="row">
+                <nav aria-label="Page navigation example" class="mg">
+                    <ul class="pagination">
+                    <li class="page-item"><a class="page-link bg-dark border-dark" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link bg-dark border-dark" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link bg-dark border-dark" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link bg-dark border-dark" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link bg-dark border-dark" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Contact -->
+        <div id="contact" class="container-fluid bg-dark text-light">
+            <div class="row">
+                <h1 class="mg">Contact</h1>
+            </div>
+            <div class="row mt-4 cont">
+                <div class="col-md-5 col-sm-10 cont-left">
+                    <h2>E-mail:</h2>
+                    <h4><i class="fa fa-envelope" aria-hidden="true"></i> Pc2282001@gmail.com</h4>
+                    <h2>Address:</h2>
+                    <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Hyderabad</h4>
+                </div>
+                <div class="col-md-4 col-sm-10 cont-left">
+                    <form class="form">
+                        <h4><input class="inp" type="text" placeholder="Name"></input></h4><br>
+                        <h4><textarea cols=23 class="inp" type="text" placeholder="Comment"></textarea></h4>
+                        <button class="btn btn-secondary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script links -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
